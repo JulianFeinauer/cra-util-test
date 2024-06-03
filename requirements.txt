@@ -34,8 +34,8 @@ Wand==0.6.10
 pydotplus==2.0.2
 opencv-python-headless==4.8.1.78
 pypdfium2==4.13.0
-matplotlib==3.6.3
-PyMuPDF==1.22.5
+# matplotlib==3.6.3
+# PyMuPDF==1.22.5
 # Table extraction
 camelot-py==0.11.0
 # Documentation
