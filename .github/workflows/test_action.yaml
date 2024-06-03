@@ -6,9 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Returns the number square
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Fetch num squared
         id: get_square
         uses: docker://jfeinauer/cra-util:latest
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-tree
+          path: graph.pdf
         # or use a released GitHub Action
         # uses: shipyard/github-action/fetch-shipyard-env@1.0.0
         # with:
